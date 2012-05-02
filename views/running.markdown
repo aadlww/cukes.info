@@ -2,11 +2,15 @@
 
 Cucumber runs on many different platforms, and how to run it depends on what platform you are using.
 
-## Cucumber-JVM
+<TABS>
+
+#### Cucumber-Ruby
+
+#### Cucumber-JVM
 
 Cucumber-JVM provides two different runners---a Command Line Interface (CLI) and a JUnit runner
 
-### JUnit
+## JUnit
 
 In order to run a Cucumber from JUnit you need a Java class that JUnit can run. For example:
 
@@ -17,20 +21,19 @@ import cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-public class super_duper {
+public class RunCukesTest {
     // No code in the class!
 }
 ```
 
-When this JUnit test is run, it will execute the `Cucumber` JUnit runner, which will look for a `.feature` file to run. In this case, it will try to load `my/app/super_duper.feature` from the `CLASSPATH`. The path name is derived from the class.
+When this JUnit test is run, it will execute the `Cucumber` JUnit runner, which will load all `.feature` files under `my/app` from the `CLASSPATH`. The path name is derived from the class.
 
-
-#### Options Available
+### Options Available
 
 There is a `Cucumber.Options` annotation that is available to use to customize the execution of Cucumber.
 
 ```java
-@Cucumber.Options( features = "something.feature", dry_run = "true", tags= {"@oneTag", "@twoTag"}, glue = "gluePath")
+@Cucumber.Options(features = "something.feature", dry_run = "true", tags= {"@oneTag", "@twoTag"}, glue = "gluePath")
 ```
 
 You can specify which feature files you want to execute for this test using the features parameter of the Options annotation
@@ -56,8 +59,10 @@ that parameter
 @Cucumber.Options(features = "something.feature", glue = "com.example.stepdefs")
 ```
 
-### Command Line Interface (CLI)
+## Command Line Interface (CLI)
 
 The Cucumber-JVM CLI is primarily intended for platforms where JUnit isn't an integrated part, for example JRuby or Rhino JavaScript.
 
 The CLI is still under development, and will be documented when it's ready to be used.
+
+#### Cucumber-JS
