@@ -13,7 +13,7 @@ This is the source for the new cukes.info website.
 
 ### Install Ruby
 
-Ruby 1.9.3 is recommended. You can install it with [RVM](http://beginrescueend.com/). Then install some gems.
+Ruby 1.9.3 is recommended. You can install it with [RVM](http://rvm.io/). Then install some gems.
 
     gem install bundler
     bundle install
