@@ -18,6 +18,10 @@ Ruby 1.9.3 is recommended. You can install it with [RVM](http://rvm.io/). Then i
     gem install bundler
     bundle install
 
+### Build static assets
+
+    bundle exec rake
+
 ### Start the server
 
     bundle exec rackup
