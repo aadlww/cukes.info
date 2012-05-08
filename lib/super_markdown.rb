@@ -48,7 +48,9 @@ class SuperHTML < Redcarpet::Render::HTML
       end
     end
     
-    doc.to_html
+    html = doc.to_html
+    html.gsub!(/CSHARP/, 'C#')
+    Redcarpet::Render::SmartyPants.render(html)
   end
 
   def block_code(code, language)

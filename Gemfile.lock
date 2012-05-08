@@ -4,6 +4,7 @@ GEM
     commonjs (0.2.6)
     daemons (1.1.8)
     eventmachine (0.12.10)
+    jsmin (1.0.1)
     less (2.2.1)
       commonjs (~> 0.2.6)
     libv8 (3.3.10.4)
@@ -31,6 +32,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jsmin (= 1.0.1)
   less (= 2.2.1)
   nokogiri (= 1.5.2)
   rake (= 0.9.2.2)
