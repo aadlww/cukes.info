@@ -6,9 +6,12 @@ $(function () {
     var preferredTabs;
     try {
         preferredTabs = JSON.parse(window.localStorage.getItem('preferredTabs'));
-    } catch(e) {
-        preferredTabs = {};
+    } catch(ignore) {
     }
+	if(!preferredTabs) {
+	    preferredTabs = {};
+	}
+
     for(var preferredTab in preferredTabs) {
         $('.nav-tabs a:contains("' + preferredTab + '")').tab('show');
     }
@@ -16,7 +19,9 @@ $(function () {
     $('a[data-toggle="tab"]').on('shown', function (e) {
         $(this).parent().siblings().find('a').each(function(_, a) {
             var unpreferred = a.innerText;
-            delete preferredTabs[unpreferred];
+			if(unpreferred in preferredTabs) {
+	            delete preferredTabs[unpreferred];
+			}
         });
         preferredTabs[e.target.innerText] = e.target.innerText;
         window.localStorage.setItem('preferredTabs', JSON.stringify(preferredTabs));
