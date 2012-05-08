@@ -55,6 +55,14 @@ directly. These files are:
 * `public/js/sh_gherkin*.js`
 * `public/js/bootstrap-*.js`
 
+A great tip for tweaking SHJS CSS is to [use Opera](http://kaioa.com/node/7)
+
+```css
+pre.sh_sourceCode span:hover{
+  content:attr(class);
+}
+``` 
+
 ## Beta site
 
 Currently at http://hollow-flower-8501.heroku.com/example
