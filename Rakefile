@@ -47,6 +47,7 @@ end
 shjs = (
   Dir['submodules/gherkin-syntax-highlighters/shjs/shjs-0.6-src/sh_main.min.js'] +
   Dir['submodules/gherkin-syntax-highlighters/shjs/shjs-0.6-src/lang/sh_{cpp,csharp,java,javascript,properties,python,ruby,scala,sh,xml}.min.js'] +
+  Dir['submodules/gherkin-syntax-highlighters/shjs/sh_{clojure,lua}.js'] +
   Dir['submodules/gherkin-syntax-highlighters/shjs/sh_gherkin_{en}.js']
 )
 

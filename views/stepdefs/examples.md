@@ -44,7 +44,7 @@ Given(~'^I have (\\d+) cukes in my belly$') { int n ->
 ```
 
 #### Clojure
-```javascript
+```clojure
 (Given #"^I have (\d+) cukes in my belly$" [n]
   (println n))
 ```
@@ -75,7 +75,7 @@ public void cukes_in_my_belly(int n)
 ```
 
 #### Lua
-```javascript
+```lua
 Given("I have (%d+) cukes in my belly", function (n)
   print(n)
 end)

@@ -22,6 +22,29 @@
       code {
           color: #4d1;
       }
+
+      @font-face {
+          font-family: 'BrawlerRegular';
+          src: url('/fonts/brawler-fontfacekit/Brawler-webfont.eot');
+          src: url('/fonts/brawler-fontfacekit/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+               url('/fonts/brawler-fontfacekit/Brawler-webfont.woff') format('woff'),
+               url('/fonts/brawler-fontfacekit/Brawler-webfont.ttf') format('truetype'),
+               url('/fonts/brawler-fontfacekit/Brawler-webfont.svg#BrawlerRegular') format('svg');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'UbuntuMonoRegular';
+          src: url('/fonts/ubuntu-mono-fontfacekit/UbuntuMono-R-webfont.eot');
+          src: url('/fonts/ubuntu-mono-fontfacekit/UbuntuMono-R-webfont.eot?#iefix') format('embedded-opentype'),
+               url('/fonts/ubuntu-mono-fontfacekit/UbuntuMono-R-webfont.woff') format('woff'),
+               url('/fonts/ubuntu-mono-fontfacekit/UbuntuMono-R-webfont.ttf') format('truetype'),
+               url('/fonts/ubuntu-mono-fontfacekit/UbuntuMono-R-webfont.svg#UbuntuMonoRegular') format('svg');
+          font-weight: normal;
+          font-style: normal;
+
+      }
     </style>
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/shjs.css" rel="stylesheet">
@@ -35,6 +58,31 @@
   <body>
 
     <div class="container-fluid">
+      <div class="span2 sb-fixed">
+        <div class="well sidebar-nav-fixed">
+          <ul class="nav nav-list">
+
+            <li class="nav-header">Sidebar</li>
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Step Definitions</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="nav-header">Sidebar</li>
+
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+
+            <li class="nav-header">Sidebar</li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
       <%= yield %>
     </div>
 

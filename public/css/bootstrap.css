@@ -130,7 +130,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #333333;
@@ -340,7 +340,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
 }
@@ -548,7 +548,7 @@ cite {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: 'Ubuntu Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: UbuntuMonoRegular, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -627,7 +627,7 @@ input,
 button,
 select,
 textarea {
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
@@ -3062,7 +3062,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-search .search-query {
   padding: 4px 9px;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
