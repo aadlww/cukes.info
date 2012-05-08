@@ -130,7 +130,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
   line-height: 18px;
   color: #333333;
@@ -340,7 +340,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
   line-height: 18px;
 }
@@ -418,7 +418,7 @@ h6 {
 .page-header {
   padding-bottom: 17px;
   margin: 18px 0;
-  border-bottom: 1px solid #eeffee;
+  border-bottom: 1px solid #eeeeee;
 }
 .page-header h1 {
   line-height: 1;
@@ -477,7 +477,7 @@ dd {
 hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeffee;
+  border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
 }
 strong {
@@ -500,7 +500,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
-  border-left: 5px solid #eeffee;
+  border-left: 5px solid #eeeeee;
 }
 blockquote p {
   margin-bottom: 0;
@@ -520,7 +520,7 @@ blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeffee;
+  border-right: 5px solid #eeeeee;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -627,7 +627,7 @@ input,
 button,
 select,
 textarea {
-  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BrawlerRegular, Georgia, "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -868,7 +868,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #eeffee;
+  background-color: #eeeeee;
   border-color: #ddd;
 }
 input[type="radio"][disabled],
@@ -1057,7 +1057,7 @@ select:focus:required:invalid:focus {
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   vertical-align: middle;
-  background-color: #eeffee;
+  background-color: #eeeeee;
   border: 1px solid #ccc;
 }
 .input-prepend .add-on,
@@ -2658,7 +2658,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeffee;
+  background-color: #eeeeee;
 }
 .nav > .pull-right {
   float: right;
@@ -2750,7 +2750,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeffee #eeffee #dddddd;
+  border-color: #eeeeee #eeeeee #dddddd;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
@@ -2926,7 +2926,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px 0 0 4px;
 }
 .tabs-left > .nav-tabs > li > a:hover {
-  border-color: #eeffee #dddddd #eeffee #eeffee;
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
@@ -2945,7 +2945,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 0 4px 4px 0;
 }
 .tabs-right > .nav-tabs > li > a:hover {
-  border-color: #eeffee #eeffee #eeffee #dddddd;
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
@@ -3062,7 +3062,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-search .search-query {
   padding: 4px 9px;
-  font-family: BrawlerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4141,7 +4141,7 @@ a.badge:hover {
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
-  background-color: #eeffee;
+  background-color: #eeeeee;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
