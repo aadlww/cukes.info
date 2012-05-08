@@ -3,7 +3,7 @@
 Every Gherkin [step](steps) must have a matching Step Definition in order to pass.
 Step Definitions are written in one of Cucumber's supported programming languages,
 and although each programming language is different, a Step Definition always consists
-of two parts --- a regular expression and a body of code.
+of two parts --- a pattern (regular expression) and a body of code.
 
 The best way to explain this is with an example. Consider the following Gherkin step:
 
@@ -89,3 +89,11 @@ Given("""^I have (\d+) cukes in my belly$""") { (n:Int) =>
 ```
 
 </TABS>
+
+When Cucumber executes a Gherkin step it will find a step definition with a matching pattern and execute the associated body.
+If the pattern has capture groups, those will be passed to the body as parameters.
+
+The step definitions above will print `5` for the step `Given I have 5 cukes in my belly`.
+
+Cucumber will instantiate a new object for each [scenario](scenarios), so any variables you assign in a step will stick around
+to the following steps in the same scenario, but they will be gone when a new scenario starts.

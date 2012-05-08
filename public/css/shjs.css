@@ -5,8 +5,8 @@ pre.sh_sourceCode {
 pre.sh_sourceCode code {
     color: #839496;
     border: 0;
-    font-family: Menlo, Monaco, "Courier New", monospace;
-    font-size: 12px;
+    font-family: 'Ubuntu Mono', Menlo, Monaco, "Courier New", monospace;
+    font-size: 15px;
 }
 
 pre.sh_sourceCode {
