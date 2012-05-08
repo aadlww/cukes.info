@@ -3,6 +3,12 @@ require 'tilt'
 require 'cgi'
 require 'nokogiri'
 
+# This Markdown extension has some extras:
+#
+# * You can use `<TABS>` to create a tab pane, and `####` to create a tab within that pane.
+# * Use triple backticks followed by language to syntax highlight code.
+# * All headers (except h1 andf h4) get anchors pointing to themselves
+#
 class SuperHTML < Redcarpet::Render::HTML
   def initialize(options={})
     super(options.merge(:with_toc_data => true))
@@ -55,6 +61,15 @@ class SuperHTML < Redcarpet::Render::HTML
 
   def block_code(code, language)
     %{<pre class="sh_#{language || 'sourceCode'}"><code>#{CGI::escapeHTML(code)}</code></pre>}
+  end
+  
+  def header(text, header_level)
+    if([1,4].index(header_level))
+      %{<h#{header_level}>#{text}</h#{header_level}>}
+    else
+      id = "#{text.gsub(/\s+/, '-')}"
+      %{<h#{header_level} id="#{id}"><a href="##{id}">#{text}</a></h#{header_level}>}
+    end
   end
 end
 

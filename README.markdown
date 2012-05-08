@@ -35,8 +35,7 @@ Files starting with an underscore (`_`) do not become individual pages---they ar
 
 ## Special Markup
 
-* You can use `<TABS>` to create a tab pane, and `####` to create a tab within that pane.
-* Use triple backticks followed by language to syntax highlight code
+See the RDoc in lib/super_markdown.rb
 
 ## Hacking on js/css
 
