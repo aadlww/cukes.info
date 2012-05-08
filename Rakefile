@@ -62,11 +62,11 @@ file 'public/js/shjs.js' => shjs do
 end
 task :shjs_gherkin => 'public/js/shjs.js'
 
-file 'public/css/shjs.css' => ['submodules/gherkin-syntax-highlighters/shjs/css/sh_tomorrow_night_eighties.less', __FILE__] do
+file 'public/css/shjs.css' => Dir['submodules/gherkin-syntax-highlighters/shjs/css/*.less'] do
   css = Dir.chdir('submodules/gherkin-syntax-highlighters/shjs/css') do
     Less::Parser.new.parse(IO.read('sh_tomorrow_night_eighties.less')).to_css
   end
   File.open('public/css/shjs.css', 'wb') {|out| out.write(css)}
 end
 
-task :default => [:bootstrap, :shjs_gherkin]
+task :default => [:bootstrap, :shjs_gherkin, 'public/css/shjs.css']

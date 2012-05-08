@@ -8,6 +8,7 @@ of two parts --- a pattern (regular expression) and a body of code.
 The best way to explain this is with an example. Consider the following Gherkin step:
 
 ```gherkin_en
+# Comment
 Given I have 5 cukes in my belly
 ```
 

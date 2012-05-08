@@ -4,50 +4,50 @@ pre.sh_sourceCode span:hover{
 /* https://github.com/ChrisKempson/Tomorrow-Theme */
 pre.sh_sourceCode {
   background-color: #2d2d2d;
-  color: #6699cc;
+  color: #cccccc;
 }
 pre.sh_sourceCode .sh_keyword {
-  color: #99cc99;
+  color: #cc99cc;
 }
 pre.sh_sourceCode .sh_type {
-  color: #99cc99;
+  color: #ffcc66;
 }
 pre.sh_sourceCode .sh_string {
-  color: #f2777a;
-}
-pre.sh_sourceCode .sh_symbol {
   color: #99cc99;
 }
+pre.sh_sourceCode .sh_symbol {
+  color: #cccccc;
+}
 pre.sh_sourceCode .sh_regexp {
-  color: red;
+  color: #99cc99;
 }
 pre.sh_sourceCode .sh_specialchar {
-  color: red;
+  color: #99cc99;
 }
 pre.sh_sourceCode .sh_comment {
-  color: #f99157;
+  color: #999999;
 }
 pre.sh_sourceCode .sh_number {
-  color: #f2777a;
+  color: #99cc99;
 }
 pre.sh_sourceCode .sh_preproc {
   color: #99cc99;
 }
 pre.sh_sourceCode .sh_function {
-  color: #99cc99;
+  color: #66cccc;
 }
 pre.sh_sourceCode .sh_name {
-  color: red;
+  color: #99cc99;
 }
 pre.sh_sourceCode .sh_variable {
-  color: red;
+  color: #99cc99;
 }
 pre.sh_sourceCode .sh_oldfile {
-  color: red;
+  color: #999999;
 }
 pre.sh_sourceCode .sh_newfile {
-  color: red;
+  color: #ffcc66;
 }
 pre.sh_sourceCode .sh_value {
-  color: #dc322f;
+  color: #99cc99;
 }
